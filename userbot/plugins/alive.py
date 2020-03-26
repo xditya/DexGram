@@ -15,6 +15,6 @@ async def amireallyalive(alive):
                      "**Telethon version:- 6.9.0**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n**Python: 3.7.3**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n"
                      "**Bot Made By:- @Zylern & @Hack12r\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n**"
                      "**Database Status: Databases functioning normally!**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n"
-                     "**My owner**: {DEFAULTUSER}\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n"
+                     f"**My Master**: {DEFAULTUSER}\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n"
                      "**[Deploy this userbot Now]**(https://github.com/Zylern/MastUserBot)\n"
                      "◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆")
