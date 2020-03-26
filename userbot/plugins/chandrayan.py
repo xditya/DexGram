@@ -4,7 +4,7 @@ Available Commands:
 
 .isro
 
-built by @r4v4n4 , isse bhi loot lo betichod"""
+"""
 
 from telethon import events
 
