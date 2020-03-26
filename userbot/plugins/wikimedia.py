@@ -1,11 +1,11 @@
 """WikiMedia.ORG
-Syntax: .wikimedia Query"""
+Syntax: .wikim Query"""
 from telethon import events
 import requests
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="wikimedia (.*)"))
+@borg.on(admin_cmd(pattern="wikim (.*)"))
 async def _(event):
     if event.fwd_from:
         return
