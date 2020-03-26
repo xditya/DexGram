@@ -22,7 +22,7 @@ def progress(current, total):
     logger.info("Downloaded {} of {}\nCompleted {}".format(current, total, (current / total) * 100))
 
 
-@borg.on(admin_cmd("go (.*)"))
+@borg.on(admin_cmd("google (.*)"))
 async def _(event):
     await event.edit("`UniBorg is Getting Information From Google Please Wait... ✍️🙇`")
     match_ = event.pattern_match.group(1)
