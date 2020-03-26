@@ -1,4 +1,4 @@
-# FORK AT YOUR OWN RISK
+# MADE WITH ❤ IN 🇮🇳 BY @Hack12R And @Zylern #JaiHind 🇮🇳🇮🇳
 # Installing
 Contact https://t.me/Zylern to report bug or error.
 ### The Easy Way
