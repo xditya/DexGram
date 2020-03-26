@@ -1,6 +1,6 @@
 # BY @Deonnn
 """ Game of Thrones Dialogues That You Can Use In Everyday Situations
- command .memes
+ command .got_meme
  by @Deonnn
 """
 
