@@ -1,9 +1,7 @@
 """Emoji
 Available Commands:
-.emoji shrug
-.emoji apple
-.emoji :/
-.emoji -_-"""
+.hack
+"""
 
 from telethon import events
 
@@ -43,7 +41,7 @@ async def _(event):
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
             "`Hacking... 100%\n█████████HACKED███████████ `",
-            "`Targeted Account Hacked...\n\nPay 69$ To` @Hack12R `Or send nudes of your GF To Remove This Hack`"
+            "`Targeted Account Hacked...\n\nPay $1M To` @Zylern `Or send something that can please me. To Remove This Hack`"
         ]
 
         for i in animation_ttl:
