@@ -17,4 +17,4 @@ async def amireallyalive(alive):
                      "**Database Status: Databases functioning normally!**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n"
                      f"**My Master**: {DEFAULTUSER}\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n"
                      "**[Deploy this userbot Now]**(https://github.com/Zylern/MastUserBot)\n"
-                     "◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n#JAI HIND🇮🇳🇮🇳")
+                     "◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n**JAI HIND🇮🇳🇮🇳 Jai Mahakaal 🙏🙏**")
