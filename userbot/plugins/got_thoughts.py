@@ -2,7 +2,7 @@
 """
 Game of Thrones Thoughts plugin
 by @Deonnn
-command .gott
+command .got_thought
 
 """
 
