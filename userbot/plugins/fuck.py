@@ -2,9 +2,9 @@
 
 Available Commands:
 
-.sux
+.sex
 
-.fuk
+.fuck
 
 .kiss"""
 
