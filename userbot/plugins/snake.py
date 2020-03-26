@@ -2,13 +2,9 @@
 
 Available Commands:
 
-.emoji shrug
+.anim3
 
-.emoji apple
-
-.emoji :/
-
-.emoji -_-"""
+"""
 
 from telethon import events
 
@@ -18,7 +14,7 @@ import asyncio
 
 
 
-@borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.anim3(.*)", outgoing=True))
 
 async def _(event):
 
