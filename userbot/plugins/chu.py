@@ -1,4 +1,4 @@
-"""COMMAND : .chu"""
+"""COMMAND : .anim1"""
 
 from telethon import events
 
