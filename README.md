@@ -1,6 +1,6 @@
 # FORK AT YOUR OWN RISK
 # Installing
-Contact https://t.me/Hack12R for any problem
+Contact https://t.me/Zylern to report bug or error.
 ### The Easy Way
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -9,8 +9,7 @@ Contact https://t.me/Hack12R for any problem
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/Hack12R/HardcoreUserbot
-cd HardcoreUserbot
+git clone https://github.com/Zylern/MastUserBot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
