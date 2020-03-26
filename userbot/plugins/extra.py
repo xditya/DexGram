@@ -39,9 +39,14 @@ async def Oof(e):
 
 @borg.on(admin_cmd("ccry$"))
 #@register(outgoing=True, pattern="^.cry$")
-async def cry(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("(;´༎ຶД༎ຶ)")
+async def _(event):
+	if event.fwd_from:
+		return
+	deq = deque(list("😞😔☹️😖😩🥺😢😭"))
+	for _ in range(32):
+		await asyncio.sleep(0.1)
+		await event.edit("".join(deq))
+		deq.rotate(1)
 
 @borg.on(admin_cmd("fp$"))
 #@register(outgoing=True, pattern="^.fp$")
@@ -65,13 +70,13 @@ async def _(event):
 #@register(outgoing=True, pattern="^.source$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/Hack12R/HardcoreUserbot")
+        await e.edit("https://github.com/Zylern/MastUserBot")
 
 @borg.on(admin_cmd("readme$"))
 #@register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/Hack12R/HardcoreUserbot/blob/master/README.md")
+        await e.edit("https://github.com/Zylern/MastUserBot/blob/master/README.md")
 
 
 
