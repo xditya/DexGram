@@ -2,7 +2,7 @@
 
 Available Commands:
 
-.ding"""
+.anim2"""
 
 from telethon import events
 
@@ -41,7 +41,7 @@ async def _(event):
             "⬜⬜⬛⬜⬜\n⬜⬜⬛⬜⬜\n⬜⬜🔴⬜⬜",
             "⬜⬜⬛⬜⬜\n⬜⬛⬜⬜⬜\n🔴⬜⬜⬜⬜",
             "🔴⬛⬛⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
-            "⬜⬜⬜⬜⬜\n⬜ [CHAAND PAR HAI APUN](https://github.com/Hack12R/HardcoreUserbot/) ⬜\n⬜⬜⬜⬜⬜"
+            "⬜⬜⬜⬜⬜\n⬜ [MARS PAR HAI APUN](https://github.com/Zylern/MastUserBot) ⬜\n⬜⬜⬜⬜⬜"
 
  ]
 
