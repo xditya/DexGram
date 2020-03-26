@@ -1,6 +1,6 @@
 """
 Say something interesting...
-Syntax: .smd
+Syntax: .dialogue
     by @Hack12R
 Dialogues credit: To their Writers Sed
 """
@@ -19,7 +19,7 @@ from uniborg.util import admin_cmd
 
 
 
-@borg.on(admin_cmd(pattern=r"smd"))
+@borg.on(admin_cmd(pattern=r"Dialog"))
 
 async def _(event):
 
