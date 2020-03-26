@@ -1,7 +1,7 @@
 """BarCode Generator
 Command .barcode (your text)
-By @snappy101
 """
+
 
 import asyncio
 import barcode
