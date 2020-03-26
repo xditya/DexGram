@@ -1,5 +1,5 @@
 """ It does not do to dwell on dreams and forget to live
-Syntax: .getime"""
+Syntax: .time"""
 
 import asyncio
 import os
@@ -36,7 +36,7 @@ async def _(event):
     await borg.send_file(  # pylint:disable=E0602
         event.chat_id,
         required_file_name,
-        caption="Userbot: Powered by @Hack12R",
+        caption="Userbot: Powered by @Zylern",
         # Courtesy: @ManueI15
         reply_to=reply_msg_id
     )
