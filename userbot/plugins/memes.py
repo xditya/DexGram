@@ -549,38 +549,6 @@ SHGS = [
     "乁( ⁰͡  Ĺ̯ ⁰͡ ) ㄏ",
 ]
 
-CRI = [
-    "أ‿أ",
-    "╥﹏╥",
-    "(;﹏;)",
-    "(ToT)",
-    "(┳Д┳)",
-    "(ಥ﹏ಥ)",
-    "（；へ：）",
-    "(T＿T)",
-    "（πーπ）",
-    "(Ｔ▽Ｔ)",
-    "(⋟﹏⋞)",
-    "（ｉДｉ）",
-    "(´Д⊂ヽ",
-    "(;Д;)",
-    "（>﹏<）",
-    "(TдT)",
-    "(つ﹏⊂)",
-    "༼☯﹏☯༽",
-    "(ノ﹏ヽ)",
-    "(ノAヽ)",
-    "(╥_╥)",
-    "(T⌓T)",
-    "(༎ຶ⌑༎ຶ)",
-    "(☍﹏⁰)｡",
-    "(ಥ_ʖಥ)",
-    "(つд⊂)",
-    "(≖͞_≖̥)",
-    "(இ﹏இ`｡)",
-    "༼ಢ_ಢ༽",
-    "༼ ༎ຶ ෴ ༎ຶ༽",
-]
 
 SLAP_TEMPLATES = [
     "{hits} {victim} with a {item}.",
@@ -804,12 +772,6 @@ async def fun(e):
         for j in range(10):
             t = t[:-1] + "_;"
             await e.edit(t)
-
-@register(outgoing=True, pattern="^.cry$")
-async def cry(e):
-    """ y u du dis, i cry everytime !! """
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit(random.choice(CRI))
 
 @register(outgoing=True, pattern="^.insult$")
 async def insult(e):
