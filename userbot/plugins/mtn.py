@@ -1,9 +1,7 @@
 """Emoji
 Available Commands:
-.emoji shrug
-.emoji apple
-.emoji :/
-.emoji -_-"""
+.jio
+"""
 
 from telethon import events
 
@@ -27,13 +25,13 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "mtn":
+    if input_str == "Boosting":
 
         await event.edit(input_str)
 
         animation_chars = [
         
-            "`Connecting To MTN NG NIGGA ....`",
+            "`Connecting To IND-Jio ....`",
             "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
             "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
             "`▒ ▒ ▆ ▅ ▄ ▂ ▁`",
@@ -51,7 +49,7 @@ async def _(event):
             "`▁ ▂ ▄ ▅ ▆ ▒ ▒`",
             "`▁ ▂ ▄ ▅ ▆ ▇ ▒`",
             "`▁ ▂ ▄ ▅ ▆ ▇ █`",
-            "**MTN Network Boosted....ENJOY MF**"
+            "**JIO Network Boosted....ENJOY**"
 
  ]
 
