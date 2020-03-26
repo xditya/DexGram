@@ -1,6 +1,6 @@
 """
 Memes Plugin for Userbot
-usage = .animate someCharacter //default delay will be 3
+usage = .meme someCharacter //default delay will be 3
 By : - @Zero_cool7870
 
 """
@@ -10,7 +10,7 @@ import os
 import sys
 
 
-@borg.on(events.NewMessage(pattern=r"\.animate", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.meme", outgoing=True))
 async def meme(event):
     if event.fwd_from:
         return   
