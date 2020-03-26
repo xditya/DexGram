@@ -17,7 +17,7 @@ async def _(event):
     c = 0 # number of super groups
     bc = 0 # number of channels
     b = 0 # number of bots
-    await event.edit("Retrieving Telegram Stats")
+    await event.edit("Retrieving Telegram Statistics")
     async for d in borg.iter_dialogs(limit=None):
         if d.is_user:
             if d.entity.bot:
