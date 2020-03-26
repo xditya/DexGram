@@ -2,8 +2,8 @@
 
 """
 Audio and video downloader using Youtube-dl
-.yta To Download in mp3 format
-.ytv To Download in mp4 format
+.ytmp3 To Download in mp3 format
+.ytmp4 To Download in mp4 format
 """
 
 import os
