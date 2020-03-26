@@ -1,5 +1,5 @@
 """Count the Number of Dialogs you have in your Telegram Account
-Syntax: .count"""
+Syntax: .stats"""
 from telethon import events
 import asyncio
 from datetime import datetime
@@ -17,7 +17,7 @@ async def _(event):
     c = 0 # number of super groups
     bc = 0 # number of channels
     b = 0 # number of bots
-    await event.edit("Retrieving Telegram Count(s)")
+    await event.edit("Retrieving Telegram Stats")
     async for d in borg.iter_dialogs(limit=None):
         if d.is_user:
             if d.entity.bot:
