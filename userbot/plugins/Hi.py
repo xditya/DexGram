@@ -1,4 +1,4 @@
-"""COMMAND : .hi"""
+"""COMMAND : .hii"""
 
 from telethon import events
 
@@ -8,7 +8,7 @@ from userbot.utils import admin_cmd
 
 
 
-@borg.on(admin_cmd(pattern="eye"))
+@borg.on(admin_cmd(pattern="hii"))
 
 async def _(event):
 
