@@ -2,13 +2,9 @@
 
 Available Commands:
 
-.emoji shrug
+.nikal
 
-.emoji apple
-
-.emoji :/
-
-.emoji -_-"""
+"""
 
 from telethon import events
 from userbot.utils import admin_cmd
@@ -32,7 +28,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "nakal":
+    if input_str == "nikal":
 
         await event.edit(input_str)
 
