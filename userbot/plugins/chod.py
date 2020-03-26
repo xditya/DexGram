@@ -1,6 +1,8 @@
 """Emoji
 
 Available Commands:
+	
+.chod
 
 .emoji shrug
 
@@ -26,7 +28,7 @@ async def _(event):
 
         return
 
-    animation_interval = 5
+    animation_interval = 2
 
     animation_ttl = range(0, 11)
 
@@ -38,8 +40,10 @@ async def _(event):
 
         animation_chars = [
         
-            "`Randi Founded`",
-            "`Your Mom Is Going To Fuck By @Hack12R`",
+            "`Randi Spotted...`",
+            "`Your Mom Is Going To Be Fucked By Zylern.`",
+            "` Getting Ready.....`",
+            "`Started Fucking.......`",
             "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nAlmost Done... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nAlmost Done...\n\nFucked Percentage... 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nAlmost Done...\n\nFucked Percentage... 8%\n██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",    
@@ -47,8 +51,9 @@ async def _(event):
             "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nAlmost Done...\n\nFucked Percentage... 36%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nAlmost Done...\n\nFucked Percentage... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nAlmost Done...\n\nFucked Percentage... 84%\n█████████████████████▒▒▒▒ `",
-            "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nAlmost Done...\n\nFucked Percentage... 100%\n█████████████████████████ `",
-            "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nYour mom get Pregnant\n\nResult: Now You Have 1 More Younger Brother `"
+            "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nAlmost Done...\n\nFucked Percentage... 100%\n█████████████████████████ `"
+            "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nSperm Ejaculated....\n\nYour mom get Pregnant\n\nResult: You will recieve your Brother in 9 months.. `"
+            "`If You Want Your One More Brother Then I'm Here...`"
         ]
 
         for i in animation_ttl:
@@ -135,3 +140,5 @@ async def _(event):
             await asyncio.sleep(animation_interval)
 
             await event.edit(animation_chars[i % 11])
+
+
