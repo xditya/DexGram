@@ -4,7 +4,7 @@
 """Filters
 Available Commands:
 .savefilter
-.listfilters
+.filter
 .clearfilter"""
 import asyncio
 import re
