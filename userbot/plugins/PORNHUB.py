@@ -2,6 +2,8 @@
 
 Available Commands:
 
+.pornhub
+
 .emoji shrug
 
 .emoji apple
