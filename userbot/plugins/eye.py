@@ -1,4 +1,4 @@
-"""COMMAND : .eye"""
+"""COMMAND : .hi"""
 
 from telethon import events
 
@@ -33,8 +33,6 @@ async def _(event):
             "👁👁\n  💋  =====> Abey Ja Na Randi",
             "👁👁\n  👄  =====> Abey Ja Na Betichod",
             "👁👁\n  👅  =====> Abey Ja Na Behenchod",    
-            "👁👁\n  💋  =====> Abey Ja Na NaMard",
-            "👁👁\n  👄  =====> Abey Ja Na Randi",
             "👁👁\n  👅  =====> Abey Ja Na Bhosdk",    
             "👁👁\n  💋  =====> Abey Ja Na Chutiye",
             "👁👁\n  👄  =====> Hi All, How Are You Guys..."
