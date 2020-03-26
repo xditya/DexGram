@@ -5,7 +5,7 @@ import os
 import sys
 
 
-@borg.on(events.NewMessage(pattern=r"\.plane", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.anime3", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
