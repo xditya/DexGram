@@ -2,7 +2,7 @@
 
 conversation starter questions...
 
-Syntax: .qt
+Syntax: .question
 
   inspired by @Deonnn's being_logical.py
 
