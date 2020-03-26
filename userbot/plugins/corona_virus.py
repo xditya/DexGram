@@ -1,5 +1,6 @@
 """CoronaVirus LookUp
 Syntax: .corona <country>"""
+pip install covid
 from covid import Covid
 from uniborg.util import admin_cmd
 
