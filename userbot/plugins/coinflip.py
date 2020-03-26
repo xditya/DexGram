@@ -1,5 +1,5 @@
 """CoinFlip for @UniBorg
-Syntax: .coinflip [optional_choice]"""
+Syntax: .toss [optional_choice]"""
 from telethon import events
 import random, re
 from uniborg.util import admin_cmd
