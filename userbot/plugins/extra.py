@@ -45,15 +45,6 @@ async def facepalm(e):
         await e.edit("🤦‍♂")
 	
 
-    if input_str == "crying":
-
-        await event.edit(input_str)
-
-        animation_chars = [
-
-            "😞",
-            "😔",    
-            "☹️",
             "😖",
             "😩",
             "🥺",
