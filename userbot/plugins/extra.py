@@ -112,9 +112,6 @@ CMD_HELP.update({
     ";__;": "You try it!"
 })
 CMD_HELP.update({
-    "cry": "Cry"
-})
-CMD_HELP.update({
     "fp": "Send face palm emoji."
 })
 CMD_HELP.update({
