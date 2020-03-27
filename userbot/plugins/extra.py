@@ -45,9 +45,8 @@ async def facepalm(e):
         await e.edit("🤦‍♂")
 	
 
-
-@borg.on(events.NewMessage(pattern=r"\.cry(.*)", outgoing=True))
-
+@borg.on(admin_cmd("cry$"))
+#@register(outgoing=True, pattern="^.cry$")
 async def _(event):
 
     if event.fwd_from:
