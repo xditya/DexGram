@@ -43,6 +43,69 @@ async def Oof(e):
 async def facepalm(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("🤦‍♂")
+	
+
+
+@borg.on(events.NewMessage(pattern=r"\.cry(.*)", outgoing=True))
+
+async def _(event):
+
+    if event.fwd_from:
+
+        return
+
+    animation_interval = 0.1
+
+    animation_ttl = range(0, 117)
+
+    input_str = event.pattern_match.group(1)
+
+    if input_str == "crying":
+
+        await event.edit(input_str)
+
+        animation_chars = [
+
+            "😞",
+            "😔",    
+            "☹️",
+            "😖",
+            "😩",
+            "🥺",
+            "😢",
+            "😭",
+            "😞",
+            "😔",    
+            "☹️",
+            "😖",
+            "😩",
+            "🥺",
+            "😢",
+            "😭",
+            "😞",
+            "😔",    
+            "☹️",
+            "😖",
+            "😩",
+            "🥺",
+            "😢",
+            "😭",
+            "😞",
+            "😔",    
+            "☹️",
+            "😖",
+            "😩",
+            "🥺",
+            "😢",
+            "😭",
+
+        ]
+
+        for i in animation_ttl:
+
+            await asyncio.sleep(animation_interval)
+
+            await event.edit(animation_chars[i % 117])
 
 @borg.on(admin_cmd("moon$"))
 #@register(outgoing=True, pattern="^.mmoon$")
@@ -140,4 +203,7 @@ CMD_HELP.update({
 })
 CMD_HELP.update({
     "fap": "Faking orgasm"
+})
+CMD_HELP.update({
+    "cry": "Show Crying Animation"
 })
