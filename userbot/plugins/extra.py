@@ -37,16 +37,6 @@ async def Oof(e):
         t = t[:-1] + "of"
         await e.edit(t)
 
-@borg.on(admin_cmd("cry$"))
-#@register(outgoing=True, pattern="^.cry$")
-async def _(event):
-	if event.fwd_from:
-		return
-	deq = deque(list("😞😔☹️😖😩🥺😢😭"))
-	for _ in range(32):
-		await asyncio.sleep(0.1)
-		await event.edit("".join(deq))
-		deq.rotate(1)
 
 @borg.on(admin_cmd("fp$"))
 #@register(outgoing=True, pattern="^.fp$")
