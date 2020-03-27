@@ -45,23 +45,6 @@ async def facepalm(e):
         await e.edit("🤦‍♂")
 	
 
-            "😖",
-            "😩",
-            "🥺",
-            "😢",
-            "😭",
-            "😞",
-            "😔",    
-            "☹️",
-            "😖",
-            "😩",
-            "🥺",
-            "😢",
-            "😭",
-            "😞",
-            "😔",    
-
-
 @borg.on(admin_cmd("moon$"))
 #@register(outgoing=True, pattern="^.mmoon$")
 async def _(event):
