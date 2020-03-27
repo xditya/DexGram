@@ -14,12 +14,12 @@ from userbot.utils import admin_cmd
 @borg.on(admin_cmd("leave$"))
 async def leave(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`I iz Leaving dis Kensur Group kek!`")
+        await e.edit("`I am leaving this fucking thing!`")
         time.sleep(3)
         if '-' in str(e.chat_id):
             await bot(LeaveChannelRequest(e.chat_id))
         else:
-            await e.edit('`Sar This is Not A Chat`')
+            await e.edit('`Sir This is Not A Chat`')
 
 @borg.on(admin_cmd(";__;$"))
 #@register(outgoing=True, pattern="^;__;$")
@@ -37,7 +37,7 @@ async def Oof(e):
         t = t[:-1] + "of"
         await e.edit(t)
 
-@borg.on(admin_cmd("ccry$"))
+@borg.on(admin_cmd("cry$"))
 #@register(outgoing=True, pattern="^.cry$")
 async def _(event):
 	if event.fwd_from:
