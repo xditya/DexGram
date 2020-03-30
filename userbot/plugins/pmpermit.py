@@ -17,7 +17,7 @@ USER_BOT_NO_WARN = ("[░░░░░█████ ]▄▄▄▄▃▃▃\n▂
                     f"{DEFAULTUSER}'s` inbox.\n\n"
                     "Leave your name, phone number, address and $10k and hopefully you'll get a reply within 20 decades.If you are here for something then my master will contact you.\n\n"
                     "**⚠️ Until Do not spam my master's inbox or you will be blocked by me. ⚠️**\n\n"
-                    "**Send** /start **So that we can decide why you're here.**")
+                    "**Send** ```/start``` **So that we can decide why you're here.**")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
