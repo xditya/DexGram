@@ -11,13 +11,13 @@ PREV_REPLY_MESSAGE = {}
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba.**"
-USER_BOT_WARN_ZERO = "`You were spamming my master's inbox, which i donot like.So you have been blocked by Me.` **Now GTFO, i'm playing minecraft** "
+USER_BOT_WARN_ZERO = "**You were spamming my master's inbox, which i donot like.So you have been blocked by Me.** __Now GTFO, i'm playing minecraft.__"
 USER_BOT_NO_WARN = ("[░░░░░█████ ]▄▄▄▄▃▃▃\n▂▄▅█████████▅▄▃▂\nI█████████████████I\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤\n](tg://user?id=1048670849)\n\n"
                     "**Hola!! It's Telegram Security Service you Pingged my Boss,**"
                     f"{DEFAULTUSER}'s` inbox.\n\n"
-                    "Leave your name, phone number, address and $10k and hopefully you'll get a reply within 20 decades.If you are here for something then my master will contact you.\n\n"
+                    "Leave your name, phone number, address and reason for coming here and i will reply you when i will be on.\n\n"
                     "**⚠️ Until Do not spam my master's inbox or you will be blocked by me. ⚠️**\n\n"
-                    "**Send** ```/start``` **So that we can decide why you're here.**")
+                    "**Send** `/start` **So that we can decide why you're here.**")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
