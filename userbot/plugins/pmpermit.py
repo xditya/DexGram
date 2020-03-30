@@ -10,7 +10,7 @@ PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba,**"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba.**"
 USER_BOT_WARN_ZERO = "`You were spamming my master's inbox, which i donot like.So you have been blocked by Me.` **Now GTFO, i'm playing minecraft** "
 USER_BOT_NO_WARN = ("[░░░░░█████ ]▄▄▄▄▃▃▃\n▂▄▅█████████▅▄▃▂\nI█████████████████I\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤\n](tg://user?id=1048670849)\n\n"
                     "**Hola!! It's Telegram Security Service you Pingged my Boss,**"
