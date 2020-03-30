@@ -10,7 +10,7 @@ PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba, check pinned message in** @XtraTgBot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba,**"
 USER_BOT_WARN_ZERO = "`You were spamming my master's inbox, which i donot like.So you have been blocked by Me.` **Now GTFO, i'm playing minecraft** "
 USER_BOT_NO_WARN = ("[░░░░░█████ ]▄▄▄▄▃▃▃\n▂▄▅█████████▅▄▃▂\nI█████████████████I\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤\n](tg://user?id=1048670849)\n\n"
                     "**Hola!! It's Telegram Security Service you Pingged my Boss,**"
@@ -127,7 +127,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
             return
           
-        if any([x in event.raw_text for x in ("/start", "1", "2", "3", "4", "5")]):
+        if any([x in event.raw_text for x in ("/start", "1", "2", "3", "4", "5", "6", "7", "8")]):
             return
 
         if not pmpermit_sql.is_approved(chat_id):
@@ -137,7 +137,7 @@ if Var.PRIVATE_GROUP_ID is not None:
     async def do_pm_permit_action(chat_id, event):
         if chat_id not in PM_WARNS:
             PM_WARNS.update({chat_id: 0})
-        if PM_WARNS[chat_id] == 5:
+        if PM_WARNS[chat_id] == 8:
             r = await event.reply(USER_BOT_WARN_ZERO)
             await asyncio.sleep(3)
             await event.client(functions.contacts.BlockRequest(chat_id))
