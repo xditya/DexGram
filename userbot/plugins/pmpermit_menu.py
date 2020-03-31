@@ -38,7 +38,7 @@ async def _(event):
                "**Choose one of the following reasons why you are here:**\n\n"
                "`1`. To chat with my master\n"
                "`2`. To spam my master's inbox.\n"
-               "`3`. To send nudes.\n"
+               "`3`. To send something.\n"
                "`4`. To enquire something\n"
                "`5`. To request something\n")
          ONE = ("__Okay. Your request has been registered. Do not spam my master's inbox. You can expect a reply within 24 decades. He is a busy man, unlike you probably.__\n\n"
@@ -83,7 +83,7 @@ async def _(event):
              await response.delete()
              x = response.text
              if x == "1":
-                 await borg.send_message(chat, "`Oh my, you're very much welcome here ;).\nPlease drop your offerings and let my master judge if you have good heart <3.`\n\n **Please don't flood my inbox, we'll have a nice convo once i come back ;D**")
+                 await borg.send_message(chat, "**Ok drop whatever you want and donot spam my master's inbox.**")
                  response = await conv.get_response(chat)
                  if not response.text == "/start":
                      await borg.send_message(chat, LWARN)
