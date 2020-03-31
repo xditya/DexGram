@@ -83,7 +83,7 @@ async def _(event):
              await response.delete()
              x = response.text
              if x == "1":
-                 await borg.send_message(chat, "**Ok drop whatever you want and donot spam my master's inbox.**")
+                 await borg.send_message(chat, "**Ok girl drop whatever you want and donot spam my master's inbox.**")
                  response = await conv.get_response(chat)
                  if not response.text == "/start":
                      await borg.send_message(chat, LWARN)
@@ -96,7 +96,7 @@ async def _(event):
                          await asyncio.sleep(3)
                          await event.client(functions.contacts.BlockRequest(chat_id))
              elif x == "2":
-                 await borg.send_message(chat, "**You nigga gay af to send a guy like my your male nudes. \nLeave immediately else you become the ultimate gayest gay the gay world has ever seen. I will reply you when i get online.**")
+                 await borg.send_message(chat, "**Ok bro drop whatever you want and donot spam my master's inbox.**")
                  response = await conv.get_response(chat)
                  if not response.text == "/start":
                      await borg.send_message(chat, LWARN)
@@ -109,7 +109,7 @@ async def _(event):
                          await asyncio.sleep(3)
                          await event.client(functions.contacts.BlockRequest(chat_id))
              elif x == "3":
-                 await borg.send_message(chat, "`Please decide a gender for yourself before sending your nudes here,\n not that i'm judging if you're a helicopter or a banana but yeah, If you are anything else than a female Homo-Sapien,\n Do not send more messages and let my master see for himself if he wants to talk with you.`")
+                 await borg.send_message(chat, "**Ok drop whatever you want and donot spam my master's inbox.**")
                  response = await conv.get_response(chat)
                  if not response.text == "/start":
                      await borg.send_message(chat, LWARN)
