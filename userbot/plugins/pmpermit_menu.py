@@ -77,35 +77,8 @@ async def _(event):
              response = await conv.get_response(chat)
              await event.delete()
              await response.delete()
-             x = response.text
-             if x == "1":
+             x = response.text:
                  await borg.send_message(chat, "`Oh my, you're very much welcome here ;).\nPlease drop your offerings and let my master judge if you have good heart <3.`\n\n **Please don't flood my inbox, we'll have a nice convo once i come back ;D**")
-                 response = await conv.get_response(chat)
-                 if not response.text == "/start":
-                     await borg.send_message(chat, LWARN)
-                     response = await conv.get_response(chat)
-                     await event.delete()
-                     await response.delete()
-                     response = await conv.get_response(chat)
-                     if not response.text == "/start":
-                         await borg.send_message(chat, TWO)
-                         await asyncio.sleep(3)
-                         await event.client(functions.contacts.BlockRequest(chat_id))
-             elif x == "2":
-                 await borg.send_message(chat, "**You nigga gay af to send a guy like my your male nudes. \nLeave immediately else you become the ultimate gayest gay the gay world has ever seen. I will reply you when i get online.**")
-                 response = await conv.get_response(chat)
-                 if not response.text == "/start":
-                     await borg.send_message(chat, LWARN)
-                     response = await conv.get_response(chat)
-                     await event.delete()
-                     await response.delete()
-                     response = await conv.get_response(chat)
-                     if not response.text == "/start":
-                         await borg.send_message(chat, TWO)
-                         await asyncio.sleep(3)
-                         await event.client(functions.contacts.BlockRequest(chat_id))
-             elif x == "3":
-                 await borg.send_message(chat, "`Please decide a gender for yourself before sending your nudes here,\n not that i'm judging if you're a helicopter or a banana but yeah, If you are anything else than a female Homo-Sapien,\n Do not send more messages and let my master see for himself if he wants to talk with you.`")
                  response = await conv.get_response(chat)
                  if not response.text == "/start":
                      await borg.send_message(chat, LWARN)
