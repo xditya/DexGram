@@ -28,17 +28,13 @@ async def _(event):
         if event.fwd_from:
             return
         if event.is_private:
-         Nudas = ("__Please state your gender.__\n"
-                  "`1`. Female Homo-Sapien\n"
-                  "`2`. Male Homo-Sapien\n"
-                  "`3`. Other\n")
-         PM = ("`Hello. You are accessing the availabe menu of my peru master,`"
+         PM = ("`Hola! You are accessing the availabe menu of my peru master,`"
                f"{DEFAULTUSER}.\n"
                "__Let's make this smooth and let me know why you are here.__\n"
                "**Choose one of the following reasons why you are here:**\n\n"
                "`1`. To chat with my master\n"
                "`2`. To spam my master's inbox.\n"
-               "`3`. To send nudes.\n"
+               "`3`. To send something.\n"
                "`4`. To enquire something\n"
                "`5`. To request something\n")
          ONE = ("__Okay. Your request has been registered. Do not spam my master's inbox, NHI TOH PELE JAAOGE.You can expect a reply within 24 light years. He is a busy man, unlike you probably.__\n\n"
