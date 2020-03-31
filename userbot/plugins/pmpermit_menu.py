@@ -31,7 +31,7 @@ async def _(event):
          Nudas = ("__Please let me know who are you?__\n"
                   "`1`. Female Homo-Sapien\n"
                   "`2`. Male Homo-Sapien\n"
-         PM = ("`Hello. You are accessing the availabe menu of my peru master,`"
+         PM = ("`Hola! You are accessing the availabe menu of my master,`"
                f"{DEFAULTUSER}.\n"
                "__Let's make this smooth and let me know why you are here.__\n"
                "**Choose one of the following reasons why you are here:**\n\n"
