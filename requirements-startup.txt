@@ -3,6 +3,7 @@ PyGithub
 aiofiles
 aiohttp
 aria2p
+uniborg
 async_generator
 beautifulsoup4
 bs4
