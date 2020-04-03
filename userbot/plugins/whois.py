@@ -6,7 +6,7 @@ from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
-from userbot.utils import admin_cmd
+from uniborg.util import admin_cmd
 
 
 @borg.on(admin_cmd("whois ?(.*)"))
@@ -23,7 +23,7 @@ async def _(event):
         max_id=0,
         limit=80
     ))
-    replied_user_profile_photos_count = "NaN"
+    replied_user_profile_photos_count = " "
     try:
         replied_user_profile_photos_count = replied_user_profile_photos.count
     except AttributeError as e:
@@ -46,16 +46,26 @@ async def _(event):
     except Exception as e:
         dc_id = "Need a Profile Picture to check **this**"
         location = str(e)
-    caption = """Extracted Userdata From Anubis' DATABASE
-ID: <code>{}</code>
-Name: <a href='tg://user?id={}'>{}</a>
-Bio: {}
-DC ID: {}
-Number of PPs: {}
-Restricted? : {}
-Verified : {}
-Bot(nub): {}
-Groups in Common : {}
+    caption = """Detailed INFO of this user:
+
+🔖ID: <code>{}</code>
+🤵Name: <a href='tg://user?id={}'>{}</a>
+✍️Bio: {}
+🌏Data Centre Number: {}
+🖼Number of Profile Pics: {}
+🔏Restricted: {}
+🌐Verified: {}
+🤖Bot: {}
+👥Groups in Common: {}
+
+
+List Of Telegram Data Centres:
+
+DC1 : Miami FL, USA
+DC2 : Amsterdam, NL
+DC3 : Jerusalem, ISR
+DC4 : Mumbai, IN
+DC5 : SUN, UNIVERSE
 """.format(
         user_id,
         user_id,
