@@ -67,12 +67,12 @@
     "PRIVATE_GROUP_BOT_API_ID": {
       "description": "Get It From The Group That You Have Created With Bot And Copy Its Chat Id and Paste Here.",
       "value": "",
-      "required": true
+      "required": false
     },
     "PRIVATE_GROUP_ID": {
       "description": "It's value will Be Same as PRIVATE_GROUP_BOT_API_ID value that you set upward.",
       "value": "",
-      "required": true
+      "required": false
    
     },
     "TG_BOT_TOKEN_BF_HER": {
