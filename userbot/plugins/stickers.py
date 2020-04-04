@@ -58,7 +58,7 @@ async def _(event):
     userid = event.from_id
     packname = f"@{user.username}'s kang pack Vol.{pack}"
     packshortname = f"a{user.id}_by_{user.username}_{pack}"
-    await event.edit("`Look dat way,it's a gurl!\nMeanwhile, lemme kang this stcker over hehe **(＾∇＾)ﾉ♪** ")
+    await event.edit("Look dat way,it's a gurl!\nMeanwhile, lemme kang this stcker over hehe **(＾∇＾)** ")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Zylern.png"
@@ -198,8 +198,8 @@ async def _(event):
                 await silently_send_message(bot_conv, "/done")
 
 
-    await event.edit(f"**Kanged!** `This sticker has been stolen to` [this place](t.me/addstickers/{packshortname}), pack{pack}"
-                     f" `by` {DEFAULTUSER}\n**(◡ ω ◡)**")
+    await event.edit(f"**Kanged!** `This sticker has been stolen to` [this place](t.me/addstickers/{packshortname})"
+                     f" by {DEFAULTUSER}\n**(◡ ω ◡)**")
 
 
 @borg.on(admin_cmd(pattern="packinfo"))
