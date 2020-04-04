@@ -74,6 +74,10 @@ if bool(ENV):
 
     # SQL Database URI
     DB_URI = os.environ.get("DATABASE_URL", None)
+    
+    # Genius lyrics  API Token
+    GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
+    GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", None)
 
     # OCR API key
     OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
