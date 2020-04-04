@@ -25,6 +25,9 @@ if ENV:
         TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "HardcoreUserbot")
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
+        # Genius lyrics  API Token
+        GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
+        GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", None)
         # Send .get_id in any group with all your administration bots (added)
         G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -100123456789))
         # TG API limit. An album can have atmost 10 media!
