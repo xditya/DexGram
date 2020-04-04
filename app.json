@@ -34,6 +34,11 @@
       "description": "Get this value by running python3 telesetup.py locally",
       "value": ""
     },
+    "GENIUS_API_TOKEN": {
+      "description": "Needed for .lyrics comand , Get your own api token from https://genius.com/developers",
+      "required": false,
+       "value": "QCgruGG2BFISCbeMVDVF0fH2RHqtRrlgX24cwtyNsvHMW2A3qzeop1DgkLjmI8_M"
+    },
     "GITHUB_ACCESS_TOKEN": {
       "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
       "value": "",
