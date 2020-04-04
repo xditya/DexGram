@@ -11,6 +11,7 @@ cfscrape
 coffeehouse
 covid
 cowpy
+lyricsgenius
 cryptg
 dnspython
 emoji
