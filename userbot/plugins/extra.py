@@ -12,6 +12,11 @@ from telethon.tl.functions.users import GetFullUserRequest
 from userbot.events import register
 from userbot.utils import admin_cmd
 
+
+GApi = GENIUS
+import lyricsgenius
+genius = lyricsgenius.Genius(GApi)
+
 @borg.on(admin_cmd("leave$"))
 async def leave(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
