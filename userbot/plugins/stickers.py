@@ -56,18 +56,18 @@ async def _(event):
         user.first_name = user.id
     pack = 1
     userid = event.from_id
-    packname = f"a{user.id}_by_{user.username}_{pack}"
-    packshortname = f"@{user.username}'s kang pack Vol.{pack}"
+    packname = f"@{user.username}'s kang pack Vol.{pack}"
+    packshortname = f"a{user.id}_by_{user.username}_{pack}"
     await event.edit("`Look dat way,it's a gurl!\nMeanwhile, lemme kang this stcker over hehe ヽ༼ ಠ益ಠ ༽ﾉ`")
 
     is_a_s = is_it_animated_sticker(reply_message)
-    file_ext_ns_ion = "Mast_roxx.png"
+    file_ext_ns_ion = "Zylern.png"
     file = await borg.download_file(reply_message.media)
     uploaded_sticker = None
     if is_a_s:
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await borg.upload_file(file, file_name=file_ext_ns_ion)
-        packname = f"a{user.id}_by_{user.username} Animated {pack}"
+        packname = f"@{user.username}'s Animated {pack}"
         if userid == 1037944593:
             packshortname = "Zylern_Animated"
         else:
@@ -199,7 +199,7 @@ async def _(event):
 
 
     await event.edit(f"**Kanged!** `This sticker has been stolen to` [this place](t.me/addstickers/{packshortname}), pack{pack}"
-                     f" `by` {DEFAULTUSER}\n**ᕦ(ò_óˇ)ᕤ**")
+                     f" `by` {DEFAULTUSER}\n**(◡ ω ◡)**")
 
 
 @borg.on(admin_cmd(pattern="packinfo"))
