@@ -1,3 +1,9 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
+#
+# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# you may not use this file except in compliance with the License.
+#
+# Userbot module for kanging stickers or making new ones. Thanks @rupansh
 """Make / Download Telegram Sticker Packs without installing Third Party applications
 Available Commands:
 .kangsticker [Optional Emoji]
@@ -37,7 +43,7 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.is_reply:
-        await event.edit("Reply to a photo to add to my personal sticker pack.**( ఠ ͟ʖ ఠ)")
+        await event.edit("Reply to a photo to add to my personal sticker pack.**( ◜‿◝ )♡**")
         return
     reply_message = await event.get_reply_message()
     sticker_emoji = "🔥"
@@ -50,9 +56,9 @@ async def _(event):
         user.first_name = user.id
     pack = 1
     userid = event.from_id
-    packname = f"{user.first_name}'s hot Vol.{pack}"
-    packshortname = f"vol_{pack}_with_{userid}"
-    await event.edit("`Look dat way,it's a gurl!\nMeanwhile, lemme kang this stcker over hehe ヽ༼ ಠ益ಠ ༽ﾉ`")
+    packname = f"@{user.username}'s kang pack Vol.{pack}"
+    packshortname = f"a{user.id}_by_{user.username}_{pack}"
+    await event.edit("Look dat way,it's a gurl!\nMeanwhile, lemme kang this stcker over hehe **(＾∇＾)** ")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Zylern.png"
@@ -61,11 +67,11 @@ async def _(event):
     if is_a_s:
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await borg.upload_file(file, file_name=file_ext_ns_ion)
-        packname = f"{user.first_name}'s Animated {pack}"
-        if userid == 1037944593:
+        packname = f"@{user.username}'s Animated {pack}"
+        if userid == 844642495:
             packshortname = "Zylern_Animated"
         else:
-            packshortname = f"{user.first_name}'s_animated_{pack}" # format: Uni_Borg_userid
+            packshortname = f"a{user.id}_by_{user.username}_animated_{pack}" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
         await event.edit("Invalid message type")
         return
@@ -130,7 +136,7 @@ async def _(event):
                 while response.text == FILLED_UP_DADDY:
                     pack += 1
                     prevv = int(pack) - 1
-                    packname = f"{user.first_name}'s hot Vol.{pack}"
+                    packname = f"@{user.username}'s kang pack Vol.{pack}"
                     packshortname = f"Vol._{pack}_with_{userid}"
                     if not await stickerset_exists(bot_conv, packshortname):
                         await event.edit("**Pack No. **" + str(prevv) + "** full! Making a new Pack, Vol. **" + str(pack))
@@ -144,7 +150,7 @@ async def _(event):
                         response = await silently_send_message(bot_conv, packname)
                         if not response.text.startswith("Alright!"):
                             if "unacceptable" in response.text:
-                                packname = f"{user.id}'s hot Vol.{pack}"
+                                packname = f"@{user.username}'s kang pack Vol.{pack}"
                                 response = await silently_send_message(bot_conv, packname)
                             else:
                                 await event.edit(f"**FAILED**! @Stickers replied: {response.text}")
@@ -192,8 +198,8 @@ async def _(event):
                 await silently_send_message(bot_conv, "/done")
 
 
-    await event.edit(f"**Kanged!** `This sticker has been stolen to` [this place](t.me/addstickers/{packshortname}), pack{pack}"
-                     f" `by` {DEFAULTUSER}\n**ᕦ(ò_óˇ)ᕤ**")
+    await event.edit(f"**Kanged!** `This sticker has been stolen to` [this place](t.me/addstickers/{packshortname})"
+                     f" by {DEFAULTUSER}\n**(◡ ω ◡)**")
 
 
 @borg.on(admin_cmd(pattern="packinfo"))
