@@ -1,4 +1,4 @@
-# MADE WITH ❤ IN 🇮🇳 BY @Hack12R And @Zylern #JaiHind 🇮🇳🇮🇳
+# MADE WITH ❤ IN 🇮🇳 BY @Zylern #JaiHind 🇮🇳🇮🇳
 # Installing
 Contact https://t.me/Zylern to report bug or error.
 ### The Easy Way
