@@ -6,7 +6,7 @@ from google_images_download import google_images_download
 import os
 import shutil
 from re import findall
-from userbot.utils import admin_cmd
+from uniborg.util import admin_cmd
 
 
 @borg.on(admin_cmd("img ?(.*)"))
@@ -19,7 +19,7 @@ async def img_sampler(event):
         lim = lim.replace("lim=", "")
         query = query.replace("lim=" + lim[0], "")
     except IndexError:
-        lim = 2
+        lim = 7
     response = google_images_download.googleimagesdownload()
 
     # creating list of arguments
