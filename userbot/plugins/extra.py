@@ -1,7 +1,6 @@
 import asyncio, subprocess
-import lyricsgenius
 import time, re, io
-from userbot import bot, BOTLOG, BOTLOG_CHATID, CMD_HELP, GENIUS, GENIUS_API_TOKEN
+from userbot import bot, BOTLOG, BOTLOG_CHATID, CMD_HELP
 from telethon import events, functions, types
 from telethon.events import StopPropagation
 from telethon.tl.functions.messages import ExportChatInviteRequest
@@ -13,10 +12,6 @@ from userbot.events import register
 from userbot.utils import admin_cmd
 
 
-GApi = GENIUS
-import lyricsgenius
-genius = lyricsgenius.Genius(GApi)
-
 @borg.on(admin_cmd("leave$"))
 async def leave(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
@@ -26,57 +21,6 @@ async def leave(e):
             await bot(LeaveChannelRequest(e.chat_id))
         else:
             await e.edit('`Sir This is Not A Chat`')
-
-@borg.on(admin_cmd("lyrics$"))
-#@register(outgoing=True, pattern="^.lyrics$")
-async def lyrics(lyr):
-	if GApi == 'None':
-		await lyr.edit(
-			"`provide genius api Heroku Var first `"
-		)
-	try:
-		args = lyr.text.split()
-		artist = lyr.text.split()[1]
-		snameinit = lyr.text.split(' ', 2)
-		sname = snameinit[2]
-	except Exception:
-		await lyr.edit("` provide artist and song names `")
-		return
-
-	#Try to search for * in artist string(for multiword artist name)
-	try:
-		artist = artist.replace('*', ' ')
-	except Exception:
-		artist = lyr.text.split()[1]
-		pass
-
-	if len(args) < 3:
-		await lyr.edit("`Please provide artist and song names`")
-
-	await lyr.edit(f"`Searching lyrics for {artist} - {sname}...`")
-
-	try:
-		song = genius.search_song(sname, artist)
-	except TypeError:
-		song = None
-
-	if song is None:
-		await lyr.edit(f"Song **{artist} - {sname}** not found!")
-		return
-	if len(song.lyrics) > 4096:
-			await lyr.edit("`Lyrics is too big, view the file to see it.`")
-			file = open("lyrics.txt", "w+")
-			file.write(f"Search query: \n{artist} - {sname}\n\n{song.lyrics}")
-			file.close()
-			await lyr.client.send_file(
-				lyr.chat_id,
-				"lyrics.txt",
-				reply_to=lyr.id,
-			)
-			os.remove("lyrics.txt")
-	else:
-		await lyr.edit(f"**Search query**: \n`{artist} - {sname}`\n\n```{song.lyrics}```")
-	return
 
 @borg.on(admin_cmd(";__;$"))
 #@register(outgoing=True, pattern="^;__;$")
