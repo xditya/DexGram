@@ -28,6 +28,7 @@ async def leave(e):
             await e.edit('`Sir This is Not A Chat`')
 
 @borg.on(admin_cmd("lyrics$"))
+#@register(outgoing=True, pattern="^.lyrics$")
 async def lyrics(lyr):
 	if GApi == 'None':
 		await lyr.edit(
