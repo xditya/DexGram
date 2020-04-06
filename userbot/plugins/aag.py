@@ -1,6 +1,8 @@
+# Coded By Zylern
 """COMMAND : .aag"""
 
 from telethon import events
+from uniborg.util import admin_cmd
 import asyncio
 
 @borg.on(admin_cmd(pattern="aag ?(.*)"))
