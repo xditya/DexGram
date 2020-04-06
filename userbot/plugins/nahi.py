@@ -1,6 +1,6 @@
 # Coded By Zylern.
 """
-Show different synonyms of no
+Show different synonyms of nope
 Syntax: .nahi
 
 """
@@ -12,7 +12,7 @@ import random
 
 
 
-@borg.on(events.NewMessage(pattern=r"\.nahi", outgoing=True))
+@borg.on(admin_cmd(pattern="nahi ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
