@@ -1,6 +1,6 @@
 """Fun pligon...for HardcoreUserbot
 \nCode by @Hack12R
-type `.degi` and `.nahi` to see the fun.
+type `.degi` to see the fun.
 """
 import random, re
 from uniborg.util import admin_cmd
@@ -28,9 +28,3 @@ async def _(event):
         await asyncio.sleep(1)
         await event.edit("`Wo Degi Tum Ekbar Mang Kar toh Dekho`")
 
-@borg.on(events.NewMessage(pattern=r".nehi", outgoing=True))
-async def _(event):
-    if event.fwd_from:
-        return
-    await event.edit("`Wo PaKkA DeGi Tu ManG KaR ToH DekH`")
-    await asyncio.sleep(999)
