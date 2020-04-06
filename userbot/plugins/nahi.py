@@ -5,11 +5,12 @@ Syntax: .nahi
 
 """
 from telethon import events
-import asyncio
 import os
 import sys
-import random
-
+import random, re
+import asyncio
+from uniborg.util import admin_cmd
+from telethon import events
 
 
 @borg.on(admin_cmd(pattern="nahi ?(.*)"))
