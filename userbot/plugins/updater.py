@@ -1,4 +1,4 @@
-"""Update UserBot code (for HardcoreUserbot)
+"""Update UserBot code (for MastUserbot)
 Syntax: .update
 \nAll Credits goes to © @Three_Cube_TeKnoways
 \nFor this awasome plugin.\nPorted from PpaperPlane Extended"""
