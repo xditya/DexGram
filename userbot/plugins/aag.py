@@ -19,7 +19,7 @@ async def _(event):
     animation_interval = 40
     
 
-    animation_ttl = range(0, 37)
+    animation_ttl = range(0, 41)
 
     input_str = event.pattern_match.group(1)
 
@@ -67,10 +67,11 @@ async def _(event):
             "🌬                                 💨  🔥",
             "🌬                                  💨 🔥",
             "🌬                                   💨🔥",
+            "🌬                                       ",
             "**Aag Bhuj Gyi** 😁",
         ]
 
         for i in animation_ttl:
 
 
-            await event.edit(animation_chars[i % 37])
+            await event.edit(animation_chars[i % 41])
