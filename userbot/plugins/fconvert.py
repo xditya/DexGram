@@ -1,5 +1,5 @@
 """File Converter
-.nfc """
+.convert """
 
 import asyncio
 import os
@@ -8,7 +8,7 @@ from datetime import datetime
 from uniborg.util import admin_cmd, progress
 
 
-@borg.on(admin_cmd(pattern="nfc (.*)"))  # pylint:disable=E0602
+@borg.on(admin_cmd(pattern="convert (.*)"))  # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
