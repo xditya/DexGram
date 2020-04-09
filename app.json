@@ -1,6 +1,6 @@
 {
   "name": "HardcoreUserbot",
-  "description": "Userbot created by a @Hack12R Ask https://t.me/Hack12R for any problems or support",
+  "description": "Userbot created by a @Zylern Ask https://t.me/zylern for any problems or support",
   "logo": "https://telegra.ph/file/1b1304649ee3ecd281322.jpg",
   "keywords": [
     "telegram",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Hack12R/HardcoreUserbot/",
+  "repository": "https://github.com/Zylern/MastUserBot/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -37,7 +37,12 @@
     "GENIUS_API_TOKEN": {
       "description": "Needed for .lyrics comand , Get your own api token from https://genius.com/developers",
       "required": false,
-       "value": "QCgruGG2BFISCbeMVDVF0fH2RHqtRrlgX24cwtyNsvHMW2A3qzeop1DgkLjmI8_M"
+       "value": ""
+    },
+    "REM_BG_API_KEY": {
+      "description": "Needed for .removebg comand , Get your own api token from https://remove.bg",
+      "required": false,
+       "value": ""
     },
     "GITHUB_ACCESS_TOKEN": {
       "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
