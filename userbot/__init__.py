@@ -75,6 +75,11 @@ if bool(ENV):
     # SQL Database URI
     DB_URI = os.environ.get("DATABASE_URL", None)
     
+    # Custom (forked) repo URL for updater.
+    UPSTREAM_REPO_URL = os.environ.get(
+        "UPSTREAM_REPO_URL",
+        "https://github.com/Zylern/MastUserBot.git")
+    
     # Genius lyrics  API Token
     GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
     GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", None)
