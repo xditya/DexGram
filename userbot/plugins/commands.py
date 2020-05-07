@@ -4,7 +4,7 @@ import asyncio
 import time
 
 
-@command(pattern="^.cmd", outgoing=True)
+@command(pattern="^.commands", outgoing=True)
 async def install(event):
     if event.fwd_from:
         return
