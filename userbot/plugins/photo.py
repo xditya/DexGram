@@ -38,7 +38,7 @@ if 1 == 1:
 
 
 
-    @borg.on(admin_cmd(pattern="poto(.*)"))
+    @borg.on(admin_cmd(pattern="photo(.*)"))
 
     async def potocmd(event):
 
