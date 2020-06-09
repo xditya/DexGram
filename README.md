@@ -1,6 +1,6 @@
-# MADE WITH ❤ IN 🇮🇳 BY @Zylern #JaiHind 🇮🇳🇮🇳
+# MADE WITH ❤ IN 🇮🇳 BY @NubDexter #JaiHind 🇮🇳🇮🇳
 # Installing
-Contact https://t.me/Zylern to report bug or error.
+Contact https://t.me/NubDexter to report bug or error.
 ### The Easy Way
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -9,7 +9,7 @@ Contact https://t.me/Zylern to report bug or error.
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/Zylern/MastUserBot
+git clone https://github.com/NubDexter/DexGram
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
