@@ -41,7 +41,7 @@ async def _(event):
         animation_chars = [
         
             "`Randi Spotted...`",
-            "`Your Mom Is Going To Be Fucked By Zylern.`",
+            "`Your Mom Is Going To Be Fucked By Dexter.`",
             "` Getting Ready.....`",
             "`Started Fucking.......`",
             "`Fucking Your Mom\n\n\nYour Mom's Pussy Get Red\nCumming On Pussy\n\nAlmost Done... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
