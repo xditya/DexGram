@@ -140,7 +140,7 @@ async def fetch_info(chat, event):
     else:
         caption += f"{chat_type} type: Private\n"
     if creator_username is not None:
-        caption += f"👨‍🔧Creator: {creator_username}\n"
+        caption += f"👤Creator: {creator_username}\n"
     elif creator_valid:
         caption += f"Creator: <a href=\"tg://user?id={creator_id}\">{creator_firstname}</a>\n"
     if created is not None:
@@ -160,15 +160,15 @@ async def fetch_info(chat, event):
     if members is not None:
         caption += f"👥Members: <code>{members}</code>\n"
     if admins is not None:
-        caption += f"Administrators: <code>{admins}</code>\n"
+        caption += f"👨‍🔧Administrators: <code>{admins}</code>\n"
     if bots_list:
         caption += f"🤖Bots: <code>{bots}</code>\n"
     if members_online:
         caption += f"Currently online: <code>{members_online}</code>\n"
     if restrcited_users is not None:
-        caption += f"Restricted users: <code>{restrcited_users}</code>\n"
+        caption += f"🚫Restricted users: <code>{restrcited_users}</code>\n"
     if banned_users is not None:
-        caption += f"Banned users: <code>{banned_users}</code>\n"
+        caption += f"🚫Banned users: <code>{banned_users}</code>\n"
     if group_stickers is not None:
         caption += f"{chat_type} stickers: <a href=\"t.me/addstickers/{chat.full_chat.stickerset.short_name}\">{group_stickers}</a>\n"
     caption += "\n"
