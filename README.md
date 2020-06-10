@@ -1,4 +1,4 @@
-# MADE WITH ❤ BY @NubDexter #JaiHind 🇮🇳🇮🇳
+# MADE WITH ❤ BY @NubDexter 🇮🇳🇮🇳
 # Installing
 Contact https://t.me/NubDexter to report bug or error.
 ### The Easy Way
