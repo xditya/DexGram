@@ -16,5 +16,5 @@ async def amireallyalive(alive):
                      # Don't change this else you a TikTok loser, Son of Jinping. Add your own.
                      "`Bot created by:` [NubDexter](tg://user?id=440510599)\n"
                      f"`Sabka Baap`: {DEFAULTUSER}\n\n"
-                     "https://github.com/NubDexter/DexGram")
-                     
+
+"[Deploy this userbot Now](https://github.com/NubDexter/DexGram)\n"
